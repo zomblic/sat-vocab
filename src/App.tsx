@@ -5,6 +5,7 @@ import ContextGamePage from "./pages/ContextGamePage";
 import MatchGamePage from "./pages/MatchGamePage";
 import SpeedGamePage from "./pages/SpeedGamePage";
 import ToneGamePage from "./pages/ToneGamePage";
+import WordbankLabPage from "./pages/WordbankLabPage";
 import GlossaryPage from "./pages/GlossaryPage";
 import ProgressPage from "./pages/ProgressPage";
 
@@ -18,6 +19,7 @@ export default function App() {
       <Route path="/play/match" element={<MatchGamePage />} />
       <Route path="/play/speed" element={<SpeedGamePage />} />
       <Route path="/play/tone" element={<ToneGamePage />} />
+      <Route path="/wordbank" element={<WordbankLabPage />} />
 
       <Route path="/glossary" element={<GlossaryPage />} />
       <Route path="/progress" element={<ProgressPage />} />
