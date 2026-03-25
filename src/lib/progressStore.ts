@@ -86,11 +86,14 @@ function toBase64Url(str: string): string {
   let bin = "";
   bytes.forEach((b) => (bin += String.fromCharCode(b)));
   const b64 = btoa(bin);
-  return b64.replaceAll("+", "-").replaceAll("/", "_").replaceAll("=", "");
+  return b64.replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "");
 }
 
 function fromBase64Url(b64url: string): string {
-  const padded = b64url.replaceAll("-", "+").replaceAll("_", "/") + "===".slice((b64url.length + 3) % 4);
+  const padded =
+    b64url.replace(/-/g, "+").replace(/_/g, "/") +
+    "===".slice((b64url.length + 3) % 4);
+
   const bin = atob(padded);
   const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
   return new TextDecoder().decode(bytes);
