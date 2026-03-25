@@ -19,8 +19,7 @@ export default function App() {
       <Route path="/play/match" element={<MatchGamePage />} />
       <Route path="/play/speed" element={<SpeedGamePage />} />
       <Route path="/play/tone" element={<ToneGamePage />} />
-      <Route path="/wordbank" element={<WordbankLabPage />} />
-
+      
       <Route path="/glossary" element={<GlossaryPage />} />
       <Route path="/progress" element={<ProgressPage />} />
 
