@@ -30,10 +30,7 @@ export default function HomePage() {
           Tone Quest
         </button>
 
-        <button className="button ghost" onClick={() => { sfxClick(); nav("/wordbank"); }}>
-          Wordbank Workshop
-        </button>
-
+     
         <button className="button ghost" onClick={() => { sfxClick(); nav("/glossary"); }}>
           Glossary
         </button>

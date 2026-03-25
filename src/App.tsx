@@ -5,7 +5,6 @@ import ContextGamePage from "./pages/ContextGamePage";
 import MatchGamePage from "./pages/MatchGamePage";
 import SpeedGamePage from "./pages/SpeedGamePage";
 import ToneGamePage from "./pages/ToneGamePage";
-import WordbankLabPage from "./pages/WordbankLabPage";
 import GlossaryPage from "./pages/GlossaryPage";
 import ProgressPage from "./pages/ProgressPage";
 
